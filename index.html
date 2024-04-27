@@ -1,59 +1,527 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ananya's Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="./assets/img/perfi.png" type="image/png">
+
+    <!--==================== UNICONS ====================-->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+
+    <!--==================== SWIPER CSS ====================-->
+    <link rel="stylesheet" href="./assets/css/swiper-bundle.min.css">
+
+    <!--==================== CSS ====================-->
+    <link rel="stylesheet" href="./assets/css/styles.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+
+    <title>Ananya S M</title>
 </head>
+
 <body>
-    <header>
-        <div class="container">
-            <h1>Ananya's Portfolio</h1>
-            <nav>
-                <ul>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#contact">Contact</a></li>
+    <!--==================== HEADER ====================-->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="#" class="nav__logo">Ananya S M</a>
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list grid">
+                    <li class="nav__item">
+                        <a href="#home" class="nav__link">
+                            <i class="uil uil-estate"></i> Home
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#about" class="nav__link">
+                            <i class="uil uil-user"></i> About
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#blogs" class="nav__link">
+                            <i class="uil uil-document-layout-left"></i> Blogs
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#youtube" class="nav__link">
+                            <i class="uil uil-youtube"></i> YouTube
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#projects" class="nav__link">
+                            <i class="uil uil-monitor"></i> Projects
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#contact" class="nav__link">
+                            <i class="uil uil-message"></i> Contact Me
+                        </a>
+                    </li>
                 </ul>
-            </nav>
-        </div>
+                <i class="uil uil-times nav__close" id="nav-close"></i>
+            </div>
+            <div class="nav__btns">
+
+                <!-- theme change button  -->
+                <i class="uil uil-moon change-theme" id="theme-button"></i>
+
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class="uil uil-apps"></i>
+                </div>
+            </div>
+        </nav>
     </header>
 
-    <section id="about">
-        <div class="container">
-            <h2>About Me</h2>
-            <p>Add your introduction here.</p>
-        </div>
-    </section>
-
-    <section id="projects">
-        <div class="container">
-            <h2>Projects</h2>
-            <div class="project">
-                <h3>Project 1</h3>
-                <p>Description of Project 1</p>
+    <!--==================== MAIN ====================-->
+    <main class="main">
+        <!--==================== HOME ====================-->
+        <section class="home section" id="home">
+            <div class="home__container container grid">
+                <div class="home__content grid">
+                    <div class="home__social">
+                        <a href="https://www.linkedin.com/in/ananyasm/" aria-label="home__social-icon" target="_blank"
+                            class="home__social-icon">
+                            <i class="uil uil-linkedin-alt"></i>
+                        </a>
+                        
+                        <a href="https://github.com/ananyamanjunath" aria-label="home__social-icon" target="_blank"
+                            class="home__social-icon">
+                            <i class="uil uil-github-alt"></i>
+                        </a>
+                        <a href="https://twitter.com/AnanyaAthreyas" aria-label="home__social-icon" target="_blank" class="home__social-icon">
+                            <i class="uil uil-twitter-alt"></i>
+                        </a>
+                    </div>
+                    <div class="home__img">
+                        <svg class="home__blob" viewbox="0 0 200 187" xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <mask id="mask0" mask-type="alpha">
+                                <path d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 165.547 
+                                    130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 129.362C2.45775 
+                                    97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 -0.149132 97.9666 
+                                    0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z" />
+                            </mask>
+                            <g mask="url(#mask0)">
+                                <path d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 
+                                    165.547 130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 
+                                    129.362C2.45775 97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 
+                                    -0.149132 97.9666 0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z" />
+                                <image class="home__blob-img" x="12" y="18" href="./assets/img/perfi.png" />
+                            </g>
+                        </svg>
+                    </div>
+                    <div class="home__data">
+                        <h1 class="home__title">Hi, I'am Ananya</h1>
+                        <h3 class="home__subtitle">Data Scientist</h3>
+                        <p class="home__discription">Core Team Member @ FORGE - Data Science Club | Data Science Blogger
+                        </p>
+                        <a href="#contact" class="button button--flex">
+                            Contact Me<i class="uil uil-message button__icon"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="home__scroll">
+                    <a href="#about" class="home__scroll-button button--flex">
+                        <i class="uil uil-mouse-alt home__scroll-mouse"></i>
+                        <span class="home__scroll-name">Scroll down</span>
+                        <i class="uil uil-arrow-down"></i>
+                    </a>
+                </div>
             </div>
-            <div class="project">
-                <h3>Project 2</h3>
-                <p>Description of Project 2</p>
+        </section>
+
+        <!--==================== ABOUT ====================-->
+        <section class="about section" id="about">
+            <h2 class="section__title">About Me</h2>
+            <span class="section__subtitle">My introduction</span>
+            <div class="about__container container grid">
+                <img src="./assets/img/about.png" alt="about" class="about__img">
+                <div class="about__data">
+                    <p class="about__description">
+                        I am pursuing my BTech degree in Computer Science and Engineering, focusing on Data Science at Presidency University Bangalore. I have a passion for data, coding, and analytics, and I enjoy using insights to solve real-world problems and create a positive impact.
+                    </p>
+                    
+                    <div class="about__buttons">
+                        <a href="/assets/pdf/Resume.pdf" download class="button button--flex">
+                            Download Resume<i class="uil uil-download-alt button__icon"></i>
+                        </a>
+                    </div>
+                </div>
             </div>
-            <!-- Add more project sections as needed -->
-        </div>
-    </section>
+        </section>
 
-    <section id="contact">
-        <div class="container">
-            <h2>Contact Me</h2>
-            <p>Email: your_email@example.com</p>
-            <p>Phone: +1234567890</p>
-        </div>
-    </section>
 
-    <footer>
-        <div class="container">
-            <p>&copy; 2024 Ananya's Portfolio</p>
+        <!--==================== QUALIFICATION ====================-->
+        <section class="qualification section" >
+            <h2 class="section__title">Qualification</h2>
+            <span class="section__subtitle">My personal journey</span>
+
+            <div class="qualification__container container">
+                <div class="qualification__tabs">
+                    <div class="qualification__button button--flex qualification__active" data-target="#education">
+                        <i class="uil uil-graduation-cap qualification__icon"></i>
+                        Education
+                    </div>
+                    <div class="qualification__button button--flex" data-target="#work">
+                        <i class="uil uil-briefcase-alt qualification__icon"></i>
+                        Work
+                    </div>
+                </div>
+
+                <div class="qualification__sections">
+
+                    <!--==================== QUALIFICATION CONTENT 1 ====================-->
+                    <div class="qualification__content qualification__active" data-content id="education">
+                        <!--==================== QUALIFICATION 1 ====================-->
+                        <div class="qualification__data">
+                            <div>
+                                <h3 class="qualification__title">High School</h3>
+                                <span class="qualification__subtitle">Sri CKS Girls High School</span>
+                                <div class="qualification__calender">
+                                    <i class="uil uil-calendar-alt"></i>
+                                    Apr 2018<br>
+                                    <!--percentage-->
+                                    93.76<i class="uil uil-percentage"></i>
+                                </div>
+                            </div>
+
+                            <div>
+                                <span class="qualification__rounder"></span>
+                                <span class="qualification__line"></span>
+                            </div>
+                        </div>
+                        <!--==================== QUALIFICATION 2 ====================-->
+                        <div class="qualification__data">
+                            <div></div>
+
+                            <div>
+                                <span class="qualification__rounder"></span>
+                                <span class="qualification__line"></span>
+                            </div>
+
+                            <div>
+                                <h3 class="qualification__title">Pre University, PCMC</h3>
+                                <span class="qualification__subtitle">Brilliant PU College</span>
+                                <div class="qualification__calender">
+                                    <i class="uil uil-calendar-alt"></i>
+                                    Jun 2018 -- Mar 2020<br>
+                                    <!--percentage-->
+                                    83.17<i class="uil uil-percentage"></i>
+                                </div>
+                            </div>
+
+
+                        </div>
+                        <!--==================== QUALIFICATION 3 ====================-->
+                        <div class="qualification__data">
+                            <div>
+                                <h3 class="qualification__title"> Computer Science and Engineering (Data Science)</h3>
+                                <span class="qualification__subtitle">Presidency University<br>Bangalore</span>
+                                <div class="qualification__calender">
+                                    <i class="uil uil-calendar-alt"></i>
+                                    Aug 2020 -- Jul 2024<br>
+                                    CGPA: 8.45/10
+                                </div>
+                            </div>
+
+                            <div>
+                                <span class="qualification__rounder"></span>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+
+
+                <div class="qualification__sections">
+
+                    <!--==================== QUALIFICATION CONTENT 2 ====================-->
+                    <div class="qualification__content" data-content id="work">
+                        <!--==================== QUALIFICATION 1 ====================-->
+                        <div class="qualification__data">
+                            <div>
+                                <h3 class="qualification__title">Web Developer (Internship)</h3>
+                                <span class="qualification__subtitle">Hexira Digitals</span>
+                                <div class="qualification__calender">
+                                    <i class="uil uil-calendar-alt"></i>
+                                    Jul 2022 -- Oct 2022
+                                </div>
+                            </div>
+
+                            <div>
+                                <span class="qualification__rounder"></span>
+                                <span class="qualification__line"></span>
+                            </div>
+                        </div>
+                        <!--==================== QUALIFICATION 2 ====================-->
+                        <div class="qualification__data">
+                            <div></div>
+
+                            <div>
+                                <span class="qualification__rounder"></span>
+                                <span class="qualification__line"></span>
+                            </div>
+
+                            <div>
+                                <h3 class="qualification__title">Data Science Blogger</h3>
+                                <span class="qualification__subtitle">Analytics Vidhya</span>
+                                <div class="qualification__calender">
+                                    <i class="uil uil-calendar-alt"></i>
+                                    May 2023 -- Present
+                                </div>
+                            </div>
+
+
+                        </div>
+                        <!--==================== QUALIFICATION 3 ====================-->
+                        <div class="qualification__data">
+                            <div>
+                                <h3 class="qualification__title">Technical Content Writer</h3>
+                                <span class="qualification__subtitle">GeeksForGeeks</span>
+                                <div class="qualification__calender">
+                                    <i class="uil uil-calendar-alt"></i>
+                                    Apr 2024 -- Present
+                                </div>
+                            </div>
+
+                            <div>
+                                <span class="qualification__rounder"></span>
+                                <!-- <span class="qualification__line"></span> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        
+        
+        
+        <!--==================== Blogs ====================-->
+        <section class="portfolio section" id="blogs">
+            <h2 class="section__title">My Blogs</h2><br>
+
+            <div class="portfolio__container container swiper-container">
+                <div class="swiper-wrapper">
+                    <!--==================== PORTFOLIO 1 ====================-->
+                    <div class="portfolio__content grid swiper-slide">
+                        <img src="./assets/img/blog1.jpg" alt="blog image 1" class="portfolio__img">
+                        <div class="portfolio__data">
+                            <h3 class="portfolio__title">Generative AI in Music Composition</h3>
+                            <p class="portfolio__description">Explore Generative AI's impact on music creation, and it's challenges.</p>
+                            <a href="https://www.analyticsvidhya.com/blog/2023/08/generative-ai-in-music-composition/" class="button button--flex button--small portfolio__button" target="_blank">
+                                Read
+                                <i class="uil uil-arrow-right button__icon"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <!--==================== PORTFOLIO 2 ====================-->
+                    <div class="portfolio__content grid swiper-slide">
+                        <img src="./assets/img/blog2.jpg" alt="portfolio image 2" class="portfolio__img">
+                        <div class="portfolio__data">
+                            <h3 class="portfolio__title">AI for Image Generation</h3>
+                            <p class="portfolio__description">Explore the integration of AI and creativity in image generation.</p>
+                            <a href="https://www.analyticsvidhya.com/blog/2023/09/artificial-intelligence-and-the-aesthetics-of-image-generation/" class="button button--flex button--small portfolio__button" target="_blank">
+                                Read
+                                <i class="uil uil-arrow-right button__icon"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <!--==================== PORTFOLIO 3 ====================-->
+                    <div class="portfolio__content grid swiper-slide">
+                        <img src="./assets/img/blog3.jpg" alt="portfolio image 3" class="portfolio__img">
+                        <div class="portfolio__data">
+                            <h3 class="portfolio__title">Predict Solar Flare using DL</h3>
+                            <p class="portfolio__description">Explore deep learning for solar flare prediction using time series data.</p>
+                            <a href="https://www.analyticsvidhya.com/blog/2024/03/how-can-deep-learning-be-applied-to-predict-solar-flares/" class="button button--flex button--small portfolio__button" target="_blank">
+                                Read
+                                <i class="uil uil-arrow-right button__icon"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-button-next">
+                    <i class="uil uil-angle-right-b swiper-portfolio-icon"></i>
+                </div>
+                <div class="swiper-button-prev">
+                    <i class="uil uil-angle-left-b swiper-portfolio-icon"></i>
+                </div>
+                <div class="swiper-pagination"></div>
+
+            </div>
+        </section>
+
+        <section class="section" id="youtube">
+            <h2 class="section__title">YouTube Video</h2>
+            <br>
+            <center>
+            <div >
+                <div>
+                    <!-- Embed your YouTube video here -->
+                    <iframe width="400" height="515" src="https://www.youtube.com/embed/b4v4t3jKNNo?si=MNP2FW2sBZVqEJ2A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </div>
+            </center>
+        </section>
+        
+        <!--==================== Projects ====================-->
+        <section class="portfolio section" id="projects">
+            <h2 class="section__title">Projects</h2>
+            <span class="section__subtitle">Most recent work</span>
+
+            <div class="portfolio__container container swiper-container">
+                <div class="swiper-wrapper">
+                    <!--==================== PORTFOLIO 1 ====================-->
+                    <div class="portfolio__content grid swiper-slide">
+                        <img src="./assets/img/project1.jpg" alt="portfolio image 1" class="portfolio__img">
+                        <div class="portfolio__data">
+                            <h3 class="portfolio__title">Text Summarizer</h3>
+                            <p class="portfolio__description">The Text Summarizer web app is a powerful tool built with Flask, the T5 transformer model, and the Google Translate API.</p>
+                            <a href="https://github.com/ananyamanjunath/Text-Summarizer" class="button button--flex button--small portfolio__button">
+                                Explore
+                                <i class="uil uil-arrow-right button__icon"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <!--==================== PORTFOLIO 2 ====================-->
+                    <div class="portfolio__content grid swiper-slide">
+                        <img src="./assets/img/project2.jpg" alt="portfolio image 2" class="portfolio__img">
+                        <div class="portfolio__data">
+                            <h3 class="portfolio__title">Sentiment Analyzer</h3>
+                            <p class="portfolio__description">The Sentiment Analyser web app is a Flask-based application designed for sentiment analysis on user-inputted text.</p>
+                            <a href="#" class="button button--flex button--small portfolio__button">
+                                Exxplore
+                                <i class="uil uil-arrow-right button__icon"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <!--==================== PORTFOLIO 3 ====================-->
+                    <div class="portfolio__content grid swiper-slide">
+                        <img src="./assets/img/project3.png" alt="portfolio image 3" class="portfolio__img">
+                        <div class="portfolio__data">
+                            <h3 class="portfolio__title">AI Try-On Website Design </h3>
+                            <p class="portfolio__description">The AI Try-On Feature Project revolutionizes online shopping by integrating Augmented Reality (AR) for a virtual fitting experience.</p>
+                            <a href="#" class="button button--flex button--small portfolio__button">
+                                Explore
+                                <i class="uil uil-arrow-right button__icon"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-button-next">
+                    <i class="uil uil-angle-right-b swiper-portfolio-icon"></i>
+                </div>
+                <div class="swiper-button-prev">
+                    <i class="uil uil-angle-left-b swiper-portfolio-icon"></i>
+                </div>
+                <div class="swiper-pagination"></div>
+
+            </div>
+        </section>
+
+        
+
+        <!--==================== CONTACT ME ====================-->
+        <section class="contact section" id="contact">
+            <h2 class="section__title">Contact Me</h2>
+            <span class="section__subtitle">Get in touch</span>
+
+            <div class="contact__container container grid">
+                <div>
+                    <div class="contact__information">
+                        <i class="uil uil-phone contact__icon"></i>
+                        <div>
+                            <h3 class="contact__title">Call Me</h3>
+                            <span class="contact__subtitle">+91 9019750951</span>
+                        </div>
+                    </div>
+                    <div class="contact__information">
+                        <i class="uil uil-envelope contact__icon"></i>
+                        <div>
+                            <h3 class="contact__title">Email</h3>
+                            <span class="contact__subtitle">ananyamdk@gmail.com</span>
+                        </div>
+                    </div>
+                    <div class="contact__information">
+                        <i class="uil uil-map-marker contact__icon"></i>
+                        <div>
+                            <h3 class="contact__title">Location</h3>
+                            <span class="contact__subtitle">Bangalore, India</span>
+                        </div>
+                    </div>
+                </div>
+
+                <form class="contact__form grid" action="https://formspree.io/f/xvoelpkp" method="POST">
+                    <div class="contact__inputs grid">
+                        <div class="contact__content">
+                            <label for="" class="contact__label">Name</label>
+                            <input type="text" name = "Name" class="contact__input">
+                        </div>
+                        <div class="contact__content">
+                            <label for="" class="contact__label">Mail ID</label>
+                            <input type="email" name = "Mail" class="contact__input">
+                        </div>
+                        <div class="contact__content">
+                            <label for="" class="contact__label">Message</label>
+                            <textarea name="Message" cols="0" rows="7" class="contact__input"></textarea>
+                        </div>
+                    </div>
+                    <input type="submit" value="Send" class="button button--flex" style="cursor: pointer; text-align: center;">
+                </form>
+
+            </div>
+        </section>
+    </main>
+
+    <!--==================== FOOTER ====================-->
+    <footer class="footer">
+        <div class="footer__bg">
+            <div class="footer__container container grid">
+                <div>
+                    <h1 class="footer__title">Ananya S M</h1>
+                    <span class="footer__subtitle">Data Scientist</span>
+                </div>
+                <ul class="footer__links">
+                    <li>
+                        <a href="#blogs" class="footer__link">Blogs</a>
+                    </li>
+                    <li>
+                        <a href="#projects" class="footer__link">Projects</a>
+                    </li>
+                    <li>
+                        <a href="#contact" class="footer__link">Contact</a>
+                    </li>
+                </ul>
+                <div class="footer__socials">
+                    <a href="https://www.facebook.com/ananyamanjunath.sm" aria-label="footer__social" target="_blank"
+                        class="footer__social">
+                        <i class="uil uil-facebook-f"></i>
+                    </a>
+                    <a href="https://www.instagram.com/ananyamanjunath/" aria-label="footer__social" target="_blank"
+                        class="footer__social">
+                        <i class="uil uil-instagram"></i>
+                    </a>
+                    <a href="https://twitter.com/AnanyaAthreyas" aria-label="footer__social" target="_blank" class="footer__social">
+                        <i class="uil uil-twitter-alt"></i>
+                    </a>
+                </div>
+            </div>
+            <p class="footer__copy">&#169; Ananya. All right reserved</p>
         </div>
     </footer>
+
+    <!--==================== SCROLL TOP ====================-->
+    <a href="#" aria-label="scroll-up" class="scrollup" id="scroll-up">
+        <i class="uil uil-arrow-up scrollup__icon"></i>
+    </a>
+
+    <!--==================== SWIPER JS ====================-->
+    <script src="./assets/js/swiper-bundle.min.js"></script>
+
+    <!--==================== MAIN JS ====================-->
+    <script src="./assets/js/main.js"></script>
 </body>
+
 </html>
